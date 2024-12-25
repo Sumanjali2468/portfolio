@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b256124d22.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="sumanjalilogo.jpg" class="logo">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="image">
+                <img src="imahe0-removebg-preview.png" alt="" style="margin: 25px 55px">
+            </div>
+            <div class="header-text">
+
+                <h1>Hi , I'm <span><span>S</span>umanjali <span style="color: brown;">T</span>hamballa</span> From India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="coloum-2">
+                    <div class="about-me">
+                        <h2 class="sub_title">About Me</h2>
+                        <p>Hello, I’m Sumanjali, currently pursuing a B.Tech degree in Electronics and Communication Engineering. I am highly passionate about web development and Python programming, with experience in utilizing various modules for efficient
+                            solutions. Additionally, I have a strong interest in networking technologies. I am actively seeking freelancing opportunities to enhance my skills and gain practical experience, aiming to contribute effectively to real-world
+                            projects while furthering my professional growth.</p>
+                    </div>
+                    <div class="about-me">
+                        <div class="tab_titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Web development</span> <br>Designing Web Applications</li>
+                                <li><span>Python</span> <br> Using modules devloping minor Projects</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>G Pulla Reddy Engineering,Kurnool</span> <br>Btech in Electronics and Communication</li>
+                                <li><span>Sri Padmavathi Women's Polytechic,Tirupathi</span> <br>Diploma in Electronics and Communication </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="projects">
+                            <ul>
+                                <li><span>python</span> <br>Voice assistant <br>Alarm Clock,Random Password Generator,BMI Calculator.</li>
+                                <li><span>WebDevelopment</span> <br> Responsive Portfolio </li>
+                            </ul>
+                        </div>
+                        <div class="about-me">
+                            <img src="image1-removebg-preview.png" style="height: 35pc; width: 20pc;">
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="Services">
+        <div class="container">
+            <h1 class="Sub_title">My Services</h1>
+            <div class="Services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Here I am using the html,css,javascript for Developing responsive webpages,helps me in startings freelancing. <br></p>
+                    <a href="#">learnmore</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>Here I am using modules for developing mini projects that helps in upskilling professionally. <br></p>
+                    <a href="#">learnmore</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>java</h2>
+                    <p>basic services related to java as a I am Begineer of it. <br></p>
+                    <a href="#">learnmore</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="Portfolio">
+        <a href="portfolio"></a>
+        <div class="container">
+            <h1 class="sub_title">My work</h1>
+            <div class="work-list">
+                <img src="image4.jpg" style="margin: 10px 50px 50px 5pc ;">
+                <p>A random password generator is a tool that creates secure, unpredictable passwords to enhance online security. By combining uppercase and lowercase letters, digits, and special characters, it ensures strong protection against unauthorized
+                    access. Using Python, you can quickly generate such passwords with a few lines of code, making it both efficient and customizable. This approach is ideal for safeguarding sensitive information in personal and professional settings.</p>
+
+            </div>
+            <div class="work-list">
+                <img src="image5.jpg" style="margin: 10px 50px 50px 5pc;">
+                <p>An alarm clock is a device or application designed to alert you at a set time, ensuring you wake up or complete tasks on schedule. Modern alarm clocks come in various forms, from traditional bedside models to digital apps with customizable
+                    tones, snooze options, and advanced features like weather updates. Using Python, you can build a simple alarm clock program to schedule reminders or wake-up calls, blending technology with functionality. It’s an essential tool for
+                    time management in daily life.</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <footer>
+        <div id="contact">
+            <a href="#contact"></a>
+            <div class="container">
+                <h1>Contact Info</h1>
+                <div class="contact-link">
+                    <div>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/thamballa-sumanjali">LinkedIn</a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="emailto:229x5a04m9@gprec.ac.in">Mail</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-github"></i>
+                        <a href="https://github.com/Sumanjali2468">Git</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
